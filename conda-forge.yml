@@ -1,6 +1,19 @@
+bot:
+    # only automerge on successful version PRs, migrations are not automerged
+    automerge: true
+    # only open PRs if resulting environment is solvable, useful for tightly coupled packages
+    check_solvable: true
+    # The bot.inspection key in the conda-forge.yml can have one of seven possible values and controls
+    # the bots behaviour for automatic dependency updates:
+    inspection: update-all  # update recipe using all methods
+
 conda_forge_output_validation: true
+
 github:
+  user_or_org: CVUA-RRW
+  repo_name: "taxidTools"
   branch_name: main
   tooling_branch_name: main
+
 conda_build:
   pkg_format: '2'
