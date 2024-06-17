@@ -1,5 +1,5 @@
 {% set name = "taxidtools" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/taxidtools-{{ version }}.tar.gz
-  sha256: de950f98c19ed0ed62b208110502087074b31a779c0ae8a22d0a13fc64cc0be7
+  sha256: 4966b672a866bdabf3af7d5eda67c18e3d637a502fba169dbc9218ad665a5e77
 
 build:
   noarch: python
